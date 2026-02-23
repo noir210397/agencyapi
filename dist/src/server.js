@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import { connectDB } from './config/db.config';
 import app from './config/app.config';
+// import { seedData } from './seeding/seeder';
 const PORT = process.env.PORT || 3000;
 async function startServer() {
     try {
