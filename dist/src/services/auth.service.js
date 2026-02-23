@@ -1,9 +1,9 @@
-import { StatusCode } from "src/constants/http";
-import PasswordResetModel from "src/models/passwordreset.model";
-import User from "src/models/user.model";
-import { CustomError } from "src/utils/customerror";
-import { generateAccessToken, generatePasswordResetToken, generateRefreshToken, verifyToken } from "src/utils/jwthelper";
-import { hashPassword, isPasswordValid } from "src/utils/passwordhelper";
+import { StatusCode } from "../../src/constants/http";
+import PasswordResetModel from "../../src/models/passwordreset.model";
+import User from "../../src/models/user.model";
+import { CustomError } from "../../src/utils/customerror";
+import { generateAccessToken, generatePasswordResetToken, generateRefreshToken, verifyToken } from "../../src/utils/jwthelper";
+import { hashPassword, isPasswordValid } from "../../src/utils/passwordhelper";
 async function signInUser({ email, password }) {
     const user = await User.findOne({ email: email }).exec();
     if (!user) {

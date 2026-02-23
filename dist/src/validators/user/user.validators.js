@@ -1,4 +1,4 @@
-import { Role } from "src/types/roles";
+import { Role } from "../../../src/types/roles";
 import z from "zod";
 import { addressSchema } from "../base";
 const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$/;

@@ -1,7 +1,7 @@
-import { StatusCode } from "src/constants/http";
-import { cancelBooking, deleteBooking, getBookings, getSingleBooking, updateBooking } from "src/services/booking.service";
-import { CustomError } from "src/utils/customerror";
-import { updateBookingSchema } from "src/validators/booking/booking.validators";
+import { StatusCode } from "../../src/constants/http";
+import { cancelBooking, deleteBooking, getBookings, getSingleBooking, updateBooking } from "../../src/services/booking.service";
+import { CustomError } from "../../src/utils/customerror";
+import { updateBookingSchema } from "../../src/validators/booking/booking.validators";
 export const getBookingsHandler = async (req, res) => {
     const bookings = await getBookings(req.user);
     return res.json(bookings);

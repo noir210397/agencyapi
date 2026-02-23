@@ -1,10 +1,10 @@
 import path from "path";
 import fs from "fs/promises";
-import User from "src/models/user.model";
-import Shift from "src/models/shift.model";
-import Booking from "src/models/booking.model";
-import Client from "src/models/client.model";
-import Job from "src/models/job.model";
+import User from "../../src/models/user.model";
+import Shift from "../../src/models/shift.model";
+import Booking from "../../src/models/booking.model";
+import Client from "../../src/models/client.model";
+import Job from "../../src/models/job.model";
 // export async function seedData() {
 //     try {
 //         const filePath = path.resolve("src", "seeding", "data.json")

@@ -1,7 +1,7 @@
-import { StatusCode } from "src/constants/http";
-import { createJob, deleteJob, getJobs, getSingleJob, updateJob } from "src/services/job.service";
-import { CustomError } from "src/utils/customerror";
-import { createJobSchema, updateJobSchema } from "src/validators/job/job.validators";
+import { StatusCode } from "../../src/constants/http";
+import { createJob, deleteJob, getJobs, getSingleJob, updateJob } from "../../src/services/job.service";
+import { CustomError } from "../../src/utils/customerror";
+import { createJobSchema, updateJobSchema } from "../../src/validators/job/job.validators";
 export const getJobsHandler = async (req, res) => {
     const clients = await getJobs();
     return res.json(clients);

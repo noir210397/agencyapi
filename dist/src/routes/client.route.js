@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { createClientHandler, deleteClientHandler, getClientsHandler, getSingleClientHandler, updateClientHandler } from "src/controllers/client.controller";
-import { validateIdParam } from "src/middlewares/valiadateparams.middleware";
+import { createClientHandler, deleteClientHandler, getClientsHandler, getSingleClientHandler, updateClientHandler } from "../../src/controllers/client.controller";
+import { validateIdParam } from "../../src/middlewares/valiadateparams.middleware";
 const router = Router();
 const routeName = "client";
 router.get("/", getClientsHandler);

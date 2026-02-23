@@ -5,7 +5,7 @@ import bookingRoutes from "./booking.route";
 import userRoutes from "./user.route";
 import clientRoutes from "./client.route";
 import jobRoutes from "./job.route";
-import { authorize } from "src/middlewares/auth.middleware";
+import { authorize } from "../../src/middlewares/auth.middleware";
 const router = Router();
 //authroutes
 router.use("/auth", authRoutes);

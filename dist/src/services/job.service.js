@@ -1,7 +1,7 @@
-import { StatusCode } from "src/constants/http";
-import Job from "src/models/job.model";
-import { CustomError } from "src/utils/customerror";
-import { formatJSON } from "src/utils/formatData";
+import { StatusCode } from "../../src/constants/http";
+import Job from "../../src/models/job.model";
+import { CustomError } from "../../src/utils/customerror";
+import { formatJSON } from "../../src/utils/formatData";
 export async function createJob(job) {
     await Job.create(job);
 }

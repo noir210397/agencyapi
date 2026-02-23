@@ -1,8 +1,8 @@
-import { StatusCode } from "src/constants/http";
-import { bookSingleAgent, createShift, deleteShift, getShifts, getSingleShift, updateShift } from "src/services/shift.service";
-import { CustomError } from "src/utils/customerror";
-import { querySchema, } from "src/validators/base";
-import { bookSingleAgentschema, deleteShiftSchema, shiftSchema, updateShiftSchema } from "src/validators/shift/shift.validators";
+import { StatusCode } from "../../src/constants/http";
+import { bookSingleAgent, createShift, deleteShift, getShifts, getSingleShift, updateShift } from "../../src/services/shift.service";
+import { CustomError } from "../../src/utils/customerror";
+import { querySchema, } from "../../src/validators/base";
+import { bookSingleAgentschema, deleteShiftSchema, shiftSchema, updateShiftSchema } from "../../src/validators/shift/shift.validators";
 export const getShiftsHandler = async (req, res) => {
     const { success, data, error } = querySchema.safeParse(req.query);
     if (!success)

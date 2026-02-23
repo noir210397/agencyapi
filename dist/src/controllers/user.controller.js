@@ -1,4 +1,4 @@
-import { deleteUser, getSingleUser, getUsers, updateUser } from "src/services/user.service";
+import { deleteUser, getSingleUser, getUsers, updateUser } from "../../src/services/user.service";
 export const getUsersHandler = async (req, res) => {
     const clients = await getUsers();
     return res.json(clients);

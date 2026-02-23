@@ -1,7 +1,7 @@
-import { StatusCode } from "src/constants/http";
-import { changeUserPassword, createAdmin, createAgent, createManager, getResetPasswordToken, resetPassword, signInUser } from "src/services/auth.service";
-import { CustomError } from "src/utils/customerror";
-import { changePasswordSchema, createAdminOrManagerSchema, createAgentSchema, loginSchema, passwordResetSchema, resetTokenSchema } from "src/validators/user/user.validators";
+import { StatusCode } from "../../src/constants/http";
+import { changeUserPassword, createAdmin, createAgent, createManager, getResetPasswordToken, resetPassword, signInUser } from "../../src/services/auth.service";
+import { CustomError } from "../../src/utils/customerror";
+import { changePasswordSchema, createAdminOrManagerSchema, createAgentSchema, loginSchema, passwordResetSchema, resetTokenSchema } from "../../src/validators/user/user.validators";
 export const signInUserHandler = async (req, res) => {
     const { success, data, error } = loginSchema.safeParse(req.body);
     if (!success) {

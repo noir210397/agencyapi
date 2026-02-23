@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { StatusCode } from "src/constants/http";
+import { StatusCode } from "../../src/constants/http";
 import { CustomError } from "./customerror";
 export function generateAccessToken(obj) {
     const key = process.env.JWT_REFRESH_TOKEN_SECRET_KEY;

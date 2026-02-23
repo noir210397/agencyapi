@@ -1,5 +1,5 @@
-import { StatusCode } from "src/constants/http";
-import { verifyToken } from "src/utils/jwthelper";
+import { StatusCode } from "../../src/constants/http";
+import { verifyToken } from "../../src/utils/jwthelper";
 function authorize(allowedRoles) {
     const authMiddleware = (req, res, next) => {
         if (!req.user) {

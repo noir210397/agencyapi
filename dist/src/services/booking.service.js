@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-import { StatusCode } from "src/constants/http";
-import Booking from "src/models/booking.model";
-import Shift from "src/models/shift.model";
-import { Role } from "src/types/roles";
-import { CustomError } from "src/utils/customerror";
-import { formatJSON } from "src/utils/formatData";
+import { StatusCode } from "../../src/constants/http";
+import Booking from "../../src/models/booking.model";
+import Shift from "../../src/models/shift.model";
+import { Role } from "../../src/types/roles";
+import { CustomError } from "../../src/utils/customerror";
+import { formatJSON } from "../../src/utils/formatData";
 export async function getBookings(user) {
     const { role, sub } = user;
     if (role === Role.AGENT.toString()) {

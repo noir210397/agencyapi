@@ -1,7 +1,7 @@
 import { z } from "zod";
 import dayjs from "dayjs";
 import { idParamSchema } from "../base";
-import { maxShiftTime, minShiftTime } from "src/constants/base";
+import { maxShiftTime, minShiftTime } from "../../../src/constants/base";
 const zDayjs = z.union([z.date(), z.string(), z.number()])
     .transform((val, ctx) => {
     let d;

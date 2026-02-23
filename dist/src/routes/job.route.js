@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { createJobHandler, deleteJobHandler, getJobsHandler, getSingleJobHandler, updateJobHandler } from "src/controllers/job.controller";
-import { authorize } from "src/middlewares/auth.middleware";
-import { validateIdParam } from "src/middlewares/valiadateparams.middleware";
+import { createJobHandler, deleteJobHandler, getJobsHandler, getSingleJobHandler, updateJobHandler } from "../../src/controllers/job.controller";
+import { authorize } from "../../src/middlewares/auth.middleware";
+import { validateIdParam } from "../../src/middlewares/valiadateparams.middleware";
 const router = Router();
 const routeName = "job";
 router.get("/", getJobsHandler);

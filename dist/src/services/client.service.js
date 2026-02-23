@@ -1,7 +1,7 @@
-import { StatusCode } from "src/constants/http";
-import Client from "src/models/client.model";
-import { CustomError } from "src/utils/customerror";
-import { formatJSON } from "src/utils/formatData";
+import { StatusCode } from "../../src/constants/http";
+import Client from "../../src/models/client.model";
+import { CustomError } from "../../src/utils/customerror";
+import { formatJSON } from "../../src/utils/formatData";
 export async function createClient(client) {
     await Client.create(client);
 }

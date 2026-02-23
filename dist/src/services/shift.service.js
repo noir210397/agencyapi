@@ -1,13 +1,13 @@
 import mongoose, { Types } from "mongoose";
-import { pageSize } from "src/constants/base";
-import { StatusCode } from "src/constants/http";
-import Booking from "src/models/booking.model";
-import Client from "src/models/client.model";
-import Shift from "src/models/shift.model";
-import User from "src/models/user.model";
-import { Role } from "src/types/roles";
-import { CustomError } from "src/utils/customerror";
-import { formatJSON } from "src/utils/formatData";
+import { pageSize } from "../../src/constants/base";
+import { StatusCode } from "../../src/constants/http";
+import Booking from "../../src/models/booking.model";
+import Client from "../../src/models/client.model";
+import Shift from "../../src/models/shift.model";
+import User from "../../src/models/user.model";
+import { Role } from "../../src/types/roles";
+import { CustomError } from "../../src/utils/customerror";
+import { formatJSON } from "../../src/utils/formatData";
 export const createShift = async (shift) => {
     // 1) Client must exist
     const { agents, agentsRequired, clientId, endTime, isPublic, startTime, } = shift;

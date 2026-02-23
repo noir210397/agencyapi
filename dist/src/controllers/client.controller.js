@@ -1,7 +1,7 @@
-import { StatusCode } from "src/constants/http";
-import { createClient, deleteClient, getClients, getSingleClient, updateClient } from "src/services/client.service";
-import { CustomError } from "src/utils/customerror";
-import { createClientSchema, updateClientSchema } from "src/validators/client/client.validators";
+import { StatusCode } from "../../src/constants/http";
+import { createClient, deleteClient, getClients, getSingleClient, updateClient } from "../../src/services/client.service";
+import { CustomError } from "../../src/utils/customerror";
+import { createClientSchema, updateClientSchema } from "../../src/validators/client/client.validators";
 export const getClientsHandler = async (req, res) => {
     const clients = await getClients();
     return res.json(clients);

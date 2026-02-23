@@ -1,6 +1,6 @@
-import { StatusCode } from "src/constants/http";
-import { CustomError } from "src/utils/customerror";
-import { idParamSchema } from "src/validators/base";
+import { StatusCode } from "../../src/constants/http";
+import { CustomError } from "../../src/utils/customerror";
+import { idParamSchema } from "../../src/validators/base";
 export function validateIdParam(routeName) {
     return (req, res, next) => {
         const { success } = idParamSchema.safeParse(req.params.id);

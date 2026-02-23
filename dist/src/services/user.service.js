@@ -1,8 +1,8 @@
-import { StatusCode } from "src/constants/http";
-import User from "src/models/user.model";
-import { CustomError } from "src/utils/customerror";
-import { formatJSON } from "src/utils/formatData";
-import { updateAdminOrManager, updateAgentSchema } from "src/validators/user/user.validators";
+import { StatusCode } from "../../src/constants/http";
+import User from "../../src/models/user.model";
+import { CustomError } from "../../src/utils/customerror";
+import { formatJSON } from "../../src/utils/formatData";
+import { updateAdminOrManager, updateAgentSchema } from "../../src/validators/user/user.validators";
 export async function getUsers() {
     const users = await User.find().lean();
     return formatJSON(users);

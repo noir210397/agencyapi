@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { bookShiftHandler, createShiftHandler, deleteShiftHandler, getShiftHandler, getShiftsHandler, updateShiftHandler } from "src/controllers/shift.controller";
-import { authorize } from "src/middlewares/auth.middleware";
-import { validateIdParam } from "src/middlewares/valiadateparams.middleware";
+import { bookShiftHandler, createShiftHandler, deleteShiftHandler, getShiftHandler, getShiftsHandler, updateShiftHandler } from "../../src/controllers/shift.controller";
+import { authorize } from "../../src/middlewares/auth.middleware";
+import { validateIdParam } from "../../src/middlewares/valiadateparams.middleware";
 const router = Router();
 const routeName = "shift";
 router.post('/', authorize("ADMIN,MANAGER"), createShiftHandler);
