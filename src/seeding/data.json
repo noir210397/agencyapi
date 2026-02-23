@@ -1,0 +1,402 @@
+{
+  "users": [
+    {
+      "firstName": "James",
+      "lastName": "Turner",
+      "age": 29,
+      "shareCode": "SCJMT1234",
+      "accNumber": "32165498",
+      "sortCode": "40-12-08",
+      "gender": "Male",
+      "mobileNumber": "07123456789",
+      "email": "james.turner@example.com",
+      "address": {
+        "postCode": "CH1 2AB",
+        "streetAddress": "12 King Street",
+        "town": "Chester"
+      },
+      "password": "Strong@Pass1",
+      "role": "ADMIN",
+      "mustChangePassword": false,
+      "isDeleted": false
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Stone",
+      "age": 26,
+      "shareCode": "SCEM2345",
+      "accNumber": "65432109",
+      "sortCode": "20-35-19",
+      "gender": "Female",
+      "mobileNumber": "07894561230",
+      "email": "emily.stone@example.com",
+      "address": {
+        "postCode": "M1 3GH",
+        "streetAddress": "45 Bridgewater Ave",
+        "town": "Manchester"
+      },
+      "password": "Secure#Code9",
+      "role": "MANAGER",
+      "mustChangePassword": false,
+      "isDeleted": false
+    },
+    {
+      "firstName": "Daniel",
+      "lastName": "Green",
+      "age": 31,
+      "shareCode": "SCDG5432",
+      "accNumber": "87654321",
+      "sortCode": "12-45-67",
+      "gender": "Male",
+      "mobileNumber": "07987654321",
+      "email": "daniel.green@example.com",
+      "address": {
+        "postCode": "L1 1AA",
+        "streetAddress": "22 Hope Street",
+        "town": "Liverpool"
+      },
+      "password": "Agent$Work7",
+      "role": "AGENT",
+      "mustChangePassword": false,
+      "isDeleted": false
+    },
+    {
+      "firstName": "Sophia",
+      "lastName": "Brown",
+      "age": 24,
+      "shareCode": "SCSB9876",
+      "accNumber": "90817263",
+      "sortCode": "30-22-14",
+      "gender": "Female",
+      "mobileNumber": "07711223344",
+      "email": "sophia.brown@example.com",
+      "address": {
+        "postCode": "NG1 2DE",
+        "streetAddress": "3 Castle Road",
+        "town": "Nottingham"
+      },
+      "password": "Hello@World2",
+      "role": "AGENT",
+      "mustChangePassword": false,
+      "isDeleted": false
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Adams",
+      "age": 34,
+      "shareCode": "SCMA1122",
+      "accNumber": "11998877",
+      "sortCode": "50-11-09",
+      "gender": "Male",
+      "mobileNumber": "07551239876",
+      "email": "michael.adams@example.com",
+      "address": {
+        "postCode": "B1 1PQ",
+        "streetAddress": "5 Queen Street",
+        "town": "Birmingham"
+      },
+      "password": "Protect@1234",
+      "role": "AGENT",
+      "mustChangePassword": false,
+      "isDeleted": false
+    }
+  ],
+  "clients": [
+    {
+      "companyName": "Bright Logistics Ltd",
+      "address": {
+        "postCode": "L2 8UJ",
+        "streetAddress": "8 Dock Road",
+        "town": "Liverpool"
+      }
+    },
+    {
+      "companyName": "FreshMart Foods",
+      "address": {
+        "postCode": "M2 5LP",
+        "streetAddress": "20 Oxford Street",
+        "town": "Manchester"
+      }
+    },
+    {
+      "companyName": "SafeHands Security",
+      "address": {
+        "postCode": "B3 1BB",
+        "streetAddress": "15 Cannon Street",
+        "town": "Birmingham"
+      }
+    },
+    {
+      "companyName": "Swift Deliveries",
+      "address": {
+        "postCode": "CH1 3SA",
+        "streetAddress": "9 Greyhound Park",
+        "town": "Chester"
+      }
+    },
+    {
+      "companyName": "Elite Catering Services",
+      "address": {
+        "postCode": "NG2 3DF",
+        "streetAddress": "55 Sherwood Avenue",
+        "town": "Nottingham"
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "applyViaIndeed": null,
+      "address": {
+        "postCode": "L1 2DE",
+        "streetAddress": "21 Sefton Street",
+        "town": "Liverpool"
+      },
+      "type": "Warehouse Operative",
+      "pay": { "minPay": 11, "maxPay": 14 },
+      "sectors": ["Logistics", "Transport"],
+      "description": "Assist in packing and shipping goods efficiently.",
+      "whatYouNeed": ["Steel toe boots", "PPE", "Attention to detail"],
+      "days": ["Monday", "Tuesday", "Friday"],
+      "shiftTimes": ["08:00-16:00"],
+      "applicationEmail": "jobs@brightlogistics.co.uk"
+    },
+    {
+      "applyViaIndeed": null,
+      "address": {
+        "postCode": "M3 2FH",
+        "streetAddress": "1 King Street",
+        "town": "Manchester"
+      },
+      "type": "Catering Assistant",
+      "pay": { "minPay": 10.5, "maxPay": 13 },
+      "sectors": ["Hospitality", "Catering"],
+      "description": "Support food prep and customer service.",
+      "whatYouNeed": ["Food hygiene cert", "Team player attitude"],
+      "days": ["Wednesday", "Saturday"],
+      "shiftTimes": ["10:00-18:00"],
+      "applicationEmail": "recruit@elitecatering.co.uk"
+    },
+    {
+      "applyViaIndeed": null,
+      "address": {
+        "postCode": "B2 4QA",
+        "streetAddress": "9 High Street",
+        "town": "Birmingham"
+      },
+      "type": "Security Officer",
+      "pay": { "minPay": 12, "maxPay": 16 },
+      "sectors": ["Security", "Facilities"],
+      "description": "Monitor premises and maintain safety protocols.",
+      "whatYouNeed": ["SIA license", "Communication skills"],
+      "days": ["Monday", "Friday", "Sunday"],
+      "shiftTimes": ["22:00-06:00"],
+      "applicationEmail": "careers@safehandssecurity.com"
+    },
+    {
+      "applyViaIndeed": null,
+      "address": {
+        "postCode": "CH1 1BG",
+        "streetAddress": "4 Market Street",
+        "town": "Chester"
+      },
+      "type": "Delivery Driver",
+      "pay": { "minPay": 11, "maxPay": 13.5 },
+      "sectors": ["Transport"],
+      "description": "Deliver packages safely and on time.",
+      "whatYouNeed": ["Valid UK license", "Good time management"],
+      "days": ["Monday", "Thursday", "Saturday"],
+      "shiftTimes": ["09:00-17:00"],
+      "applicationEmail": "hiring@swiftdeliveries.co.uk"
+    },
+    {
+      "applyViaIndeed": null,
+      "address": {
+        "postCode": "NG1 5LP",
+        "streetAddress": "7 Forest Road",
+        "town": "Nottingham"
+      },
+      "type": "Cleaner",
+      "pay": { "minPay": 10, "maxPay": 12 },
+      "sectors": ["Maintenance"],
+      "description": "Maintain cleanliness in office environments.",
+      "whatYouNeed": ["Experience in cleaning", "Attention to detail"],
+      "days": ["Tuesday", "Thursday"],
+      "shiftTimes": ["07:00-15:00"],
+      "applicationEmail": "apply@freshmartfoods.co.uk"
+    }
+  ],
+  "shifts": [
+    {
+      "agentsRequired": 3,
+      "client": {
+        "companyName": "Bright Logistics Ltd",
+        "address": {
+          "postCode": "L2 8UJ",
+          "streetAddress": "8 Dock Road",
+          "town": "Liverpool"
+        }
+      },
+      "isPublic": true,
+      "agentsBooked": 0,
+      "availableSlots": 3
+    },
+    {
+      "agentsRequired": 2,
+      "client": {
+        "companyName": "FreshMart Foods",
+        "address": {
+          "postCode": "M2 5LP",
+          "streetAddress": "20 Oxford Street",
+          "town": "Manchester"
+        }
+      },
+      "isPublic": false,
+      "agentsBooked": 0,
+      "availableSlots": 2
+    },
+    {
+      "agentsRequired": 4,
+      "client": {
+        "companyName": "SafeHands Security",
+        "address": {
+          "postCode": "B3 1BB",
+          "streetAddress": "15 Cannon Street",
+          "town": "Birmingham"
+        }
+      },
+      "isPublic": true,
+      "agentsBooked": 0,
+      "availableSlots": 4
+    },
+    {
+      "agentsRequired": 1,
+      "client": {
+        "companyName": "Swift Deliveries",
+        "address": {
+          "postCode": "CH1 3SA",
+          "streetAddress": "9 Greyhound Park",
+          "town": "Chester"
+        }
+      },
+      "isPublic": true,
+      "agentsBooked": 0,
+      "availableSlots": 1
+    },
+    {
+      "agentsRequired": 2,
+      "client": {
+        "companyName": "Elite Catering Services",
+        "address": {
+          "postCode": "NG2 3DF",
+          "streetAddress": "55 Sherwood Avenue",
+          "town": "Nottingham"
+        }
+      },
+      "isPublic": false,
+      "agentsBooked": 0,
+      "availableSlots": 2
+    }
+  ],
+  "bookings": [
+    {
+      "client": {
+        "companyName": "Bright Logistics Ltd",
+        "address": {
+          "postCode": "L2 8UJ",
+          "streetAddress": "8 Dock Road",
+          "town": "Liverpool"
+        }
+      },
+      "wasPresent": false,
+      "shiftId": null,
+      "agentId": null,
+      "agentDetails": {
+        "fullName": "",
+        "email": ""
+      },
+      "status": "active",
+      "isActive": true,
+      "isCancelled": false
+    },
+    {
+      "client": {
+        "companyName": "FreshMart Foods",
+        "address": {
+          "postCode": "M2 5LP",
+          "streetAddress": "20 Oxford Street",
+          "town": "Manchester"
+        }
+      },
+      "wasPresent": false,
+      "shiftId": null,
+      "agentId": null,
+      "agentDetails": {
+        "fullName": "",
+        "email": ""
+      },
+      "status": "active",
+      "isActive": true,
+      "isCancelled": false
+    },
+    {
+      "client": {
+        "companyName": "SafeHands Security",
+        "address": {
+          "postCode": "B3 1BB",
+          "streetAddress": "15 Cannon Street",
+          "town": "Birmingham"
+        }
+      },
+      "wasPresent": false,
+      "shiftId": null,
+      "agentId": null,
+      "agentDetails": {
+        "fullName": "",
+        "email": ""
+      },
+      "status": "active",
+      "isActive": true,
+      "isCancelled": false
+    },
+    {
+      "client": {
+        "companyName": "Swift Deliveries",
+        "address": {
+          "postCode": "CH1 3SA",
+          "streetAddress": "9 Greyhound Park",
+          "town": "Chester"
+        }
+      },
+      "wasPresent": false,
+      "shiftId": null,
+      "agentId": null,
+      "agentDetails": {
+        "fullName": "",
+        "email": ""
+      },
+      "status": "active",
+      "isActive": true,
+      "isCancelled": false
+    },
+    {
+      "client": {
+        "companyName": "Elite Catering Services",
+        "address": {
+          "postCode": "NG2 3DF",
+          "streetAddress": "55 Sherwood Avenue",
+          "town": "Nottingham"
+        }
+      },
+      "wasPresent": false,
+      "shiftId": null,
+      "agentId": null,
+      "agentDetails": {
+        "fullName": "",
+        "email": ""
+      },
+      "status": "active",
+      "isActive": true,
+      "isCancelled": false
+    }
+  ]
+}
