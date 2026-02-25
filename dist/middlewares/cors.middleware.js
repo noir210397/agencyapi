@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const cors_1 = __importDefault(require("cors"));
 const whitelist = [
     'http://localhost:3001',
+    'https://thorneandmayreruiters.vercel.app',
 ];
 const corsOptions = {
     origin: (origin, callback) => {
