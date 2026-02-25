@@ -2,7 +2,7 @@
   "name": "thornandmayrecruitersapi",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "./dist/server.js",
   "scripts": {
     "dev": "nodemon",

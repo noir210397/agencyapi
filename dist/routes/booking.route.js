@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const booking_controller_1 = require("../controllers/booking.controller");
+const auth_middleware_1 = require("../middlewares/auth.middleware");
+const valiadateparams_middleware_1 = require("../middlewares/valiadateparams.middleware");
+const router = (0, express_1.Router)();
+const routeName = "booking";
+router.get("/", (0, auth_middleware_1.authorize)(), booking_controller_1.getBookingsHandler);
+router.put('/:id', (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), booking_controller_1.updateBookinghandler);
+router.put('/cancel/:id', (0, auth_middleware_1.authorize)("AGENT"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), booking_controller_1.cancelBookingHandler);
+router.get("/:id", (0, auth_middleware_1.authorize)(), (0, valiadateparams_middleware_1.validateIdParam)(routeName), booking_controller_1.getSingleBookingHandler);
+router.delete('/:id', (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), booking_controller_1.deleteBookinghandler);
+exports.default = router;

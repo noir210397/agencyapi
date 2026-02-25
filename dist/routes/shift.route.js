@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const shift_controller_1 = require("../controllers/shift.controller");
+const auth_middleware_1 = require("../middlewares/auth.middleware");
+const valiadateparams_middleware_1 = require("../middlewares/valiadateparams.middleware");
+const router = (0, express_1.Router)();
+const routeName = "shift";
+router.post('/', (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), shift_controller_1.createShiftHandler);
+router.post('/agent', (0, auth_middleware_1.authorize)("AGENT"), shift_controller_1.bookShiftHandler);
+router.get("/", (0, auth_middleware_1.authorize)(), shift_controller_1.getShiftsHandler);
+router.get("/:id", (0, auth_middleware_1.authorize)(), (0, valiadateparams_middleware_1.validateIdParam)("shift"), shift_controller_1.getShiftHandler);
+router.put('/:id', (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), shift_controller_1.updateShiftHandler);
+router.delete('/:id', (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), shift_controller_1.deleteShiftHandler);
+exports.default = router;

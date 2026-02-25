@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const job_controller_1 = require("../controllers/job.controller");
+const auth_middleware_1 = require("../middlewares/auth.middleware");
+const valiadateparams_middleware_1 = require("../middlewares/valiadateparams.middleware");
+const router = (0, express_1.Router)();
+const routeName = "job";
+router.get("/", job_controller_1.getJobsHandler);
+router.get("/:id", (0, valiadateparams_middleware_1.validateIdParam)(routeName), job_controller_1.getSingleJobHandler);
+router.put("/:id", (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), job_controller_1.updateJobHandler);
+router.delete("/:id", (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), (0, valiadateparams_middleware_1.validateIdParam)(routeName), job_controller_1.deleteJobHandler);
+router.post("/", (0, auth_middleware_1.authorize)("ADMIN,MANAGER"), job_controller_1.createJobHandler);
+exports.default = router;

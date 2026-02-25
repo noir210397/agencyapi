@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const client_controller_1 = require("../controllers/client.controller");
+const valiadateparams_middleware_1 = require("../middlewares/valiadateparams.middleware");
+const router = (0, express_1.Router)();
+const routeName = "client";
+router.get("/", client_controller_1.getClientsHandler);
+router.get("/:id", (0, valiadateparams_middleware_1.validateIdParam)(routeName), client_controller_1.getSingleClientHandler);
+router.put("/:id", (0, valiadateparams_middleware_1.validateIdParam)(routeName), client_controller_1.updateClientHandler);
+router.delete("/:id", (0, valiadateparams_middleware_1.validateIdParam)(routeName), client_controller_1.deleteClientHandler);
+router.post("/", client_controller_1.createClientHandler);
+exports.default = router;
